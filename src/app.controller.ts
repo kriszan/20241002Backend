@@ -12,4 +12,11 @@ export class AppController {
       message: this.appService.getHello()
     };
   }
+
+  @Get('/test')
+  getTest() {
+    return {
+      message: "test"
+    };
+  }
 }
